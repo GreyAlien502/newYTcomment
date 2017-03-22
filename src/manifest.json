@@ -1,0 +1,15 @@
+{
+	"applications": {
+		"gecko": { "id": "newYTcomment@greyalien502.org" }
+	},
+	"manifest_version": 2,
+	"name": "newYTcomment",
+	"version": "0.0",
+	"description": "Show newest comments instead of top comments",
+	"content_scripts": [
+		{
+			"matches": ["https://www.youtube.com/*"],
+			"js": ["newYTcomment.js"]
+		}
+	]
+}
